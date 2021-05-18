@@ -88,5 +88,6 @@
 	}
 	.list-group label {
 		cursor: pointer;
+		display: inline-block;
 	}
 </style>
