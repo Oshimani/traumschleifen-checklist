@@ -16,7 +16,8 @@
 
 				const completionData = JSON.parse(localStorage.getItem("ts"));
 				traumschleifen = tsdata.map((ts) => {
-					const match = completionData.indexOf(ts.name);
+					let match = -1;
+					if (completionData) match = completionData.indexOf(ts.name);
 					return {
 						name: ts.name,
 						length: ts.length,
